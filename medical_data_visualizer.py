@@ -54,10 +54,11 @@ def draw_heat_map():
     return fig
 
 
-
+st.write("The chart below splits data by Cardio disease presence (0 = No, 1 = Yes) and counts various risk factors.")
 cat_fig = draw_cat_plot()
 st.pyplot(cat_fig)
 st.divider()
 
+st.write("This heatmap shows the correlation between different medical metrics after cleaning the data.")
 heat_fig = draw_heat_map()
 st.pyplot(heat_fig)
